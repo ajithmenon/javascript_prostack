@@ -10,3 +10,9 @@ function findDate() {
     para1.innerHTML = new Date().toLocaleDateString()
 }
 
+function selectbyClass() {
+    let para1 = document.getElementsByClassName('justone')[0]       // there will be many similar tag, so we should give the reference to its position - [0]
+    
+    para1.innerHTML = "Selected by class"
+}
+
