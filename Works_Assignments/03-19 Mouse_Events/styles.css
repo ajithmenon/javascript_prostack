@@ -1,0 +1,13 @@
+
+button, input {
+    width: 200px;
+    height: 45px;
+}
+
+button {
+    background-color: red;
+}
+
+.large{
+    font-size: 20px;
+}
