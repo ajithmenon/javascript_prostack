@@ -2,11 +2,15 @@
 function hoverMe() {
     let btnhover = document.getElementById("mouseover")
     btnhover.style.backgroundColor = "blue"
+
+    btnhover.onmouseout = ()=> { btnhover.style.backgroundColor = "red" }
 }
 
 function hoverOut() {
     let btnMouseOut = document.getElementById("mouseout")
     btnMouseOut.style.backgroundColor = "orange"    
+    
+    btnMouseOut.onmouseover = ()=> { btnMouseOut.style.backgroundColor = "red" }
 }
 
 function clickMe() {
@@ -21,10 +25,12 @@ function doubleClickMe() {
 
 function textFocus() {
     let InputFocus = document.getElementById("focusedtext")
-    InputFocus.style.background = "yellow"
+    InputFocus.style.background = "rgba(255, 255, 0, 0.882)"
+
+    InputFocus.onblur =()=>{ InputFocus.style.background = "white" }
 }
 
 function outOfFocus() {
-    let InputFocus = document.getElementById("uppercase")
-    InputFocus.value = InputFocus.value.toUpperCase();
+    let InputBlur = document.getElementById("uppercase")
+    InputBlur.value = InputBlur.value.toUpperCase();
 }
