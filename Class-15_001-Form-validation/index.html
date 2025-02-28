@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript" src="data.js"></script>
+        <link rel="stylesheet" href="bootStrap_styles.css">
+    </head>
+    <body>
+        <h3>Login Page</h3>
+        <div class="container">
+            <form onsubmit="return loginValidation()" class="form-group" >  <!-- we are using return to stop reloading the form a temporary method : retuen false to stop  -->
+                <div class="row">
+                    <div class="col-3">
+                        <label>Email</label>
+                    </div>
+                    <div class="col-3 form-group">
+                        <input type="text" id="uemailid" class="form-control"/>
+                        <span id="email-val" style="color: red;"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label>Password</label>
+                    </div>
+                    <div class="col-3 form-group">
+                        <input type="text" id="upassword"  class="form-control"/>
+                        <span id="password-val" style="color: red;"></span>
+                    </div>
+                </div>
+                <input type="submit" value="login"/>
+            </form>
+        </div>
+    </body>
+</html>
